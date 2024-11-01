@@ -4,7 +4,7 @@
         <h2>กำลังโหลดข้อมูลสินค้า...</h2>
     </div>
     <div class="row mt-2" v-else>
-        <div class="col mb-2" v-for="(product, index) in search_products" :key="index">
+        <div class="col mb-2" style="flex: 0 0 0%;" v-for="(product, index) in list" :key="index">
             <div class="card" style="width: 19rem; height: 25rem;">
                 <img :src="product.image" alt="" class="card-img-top mx-auto"
                     style="width: 12rem !important; height: 175px !important; margin-top: 10px;">
@@ -36,13 +36,13 @@ import { useProductStore } from '../store/product';
 import { RouterLink } from 'vue-router';
 const product_store = useProductStore()
 
-const list = computed(() => product_store.list_products)
+const list = computed(() => product_store.list_products_jewerly)
 
 //useCartStore
 import { useCartStore } from '../store/cart';
 const cart_store = useCartStore()
 
-const search_products = computed(() => product_store.search_products)
+const search_products = computed(() => product_store_electornic.search_products)
 
 
 </script>

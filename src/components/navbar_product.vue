@@ -12,6 +12,18 @@
         </li>
         <li class="nav-item">
           <routerLink to="/cart" class="nav-link" aria-current="page">ตะกล้าสินค้า</routerLink>
+        </li>   
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            หมวดหมู่สินค้า
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><routerLink to="/electronics" class="dropdown-item" >อิเล็คทรอนิค</routerLink></li>
+            <li><routerLink to="/jewelery" class="dropdown-item" >เครื่องประดับ</routerLink></li>
+            <li><routerLink to="/men_clothes" class="dropdown-item" >เสื้อผ้าผู้ชาย</routerLink></li>
+            <li><routerLink to="/women_clothes" class="dropdown-item" >เสื้อผ้าผู้หญิง</routerLink></li> 
+          </ul>
         </li>
         
       </ul>
